@@ -41,6 +41,13 @@ int Toplam6(int a, int b) => a + b; //gördüğün iki satır birbiriyle aynı
 //}
 
 //7.Fonksiyon tipli,ya da fonksiyon parametreli fonksiyonlar
-int MatematikIslemi(Function islem, int a, int b) {
-  return islem(a, b);
+int MatematikIslemi(Function(int, int) islem, int a, int b) {
+  return islem(a, b); //return durdurma işine yarıyor
 }
+
+//8.anonim metodlar
+var product = (int a, int b) {
+  //product çarpma işlemi yapar
+//işlemler
+  return a + b;
+};
