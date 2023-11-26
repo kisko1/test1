@@ -4,14 +4,18 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
-
         {
-            "program": "${file}" ,
+            "type": "java",
+            "name": "hello",
+            "request": "launch",
+            "mainClass": "hello",
+            "projectName": "test1_714ce071"
+        },
+        {
+            "program": "${file}",
             "name": "Dart & Flutter",
             "request": "launch",
-            "type": "dart" ,
-            //"console": "terminal",
+            "type": "dart"
         }
     ]
 }
